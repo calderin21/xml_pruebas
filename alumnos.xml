@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+nombre
+apellido
+curso
+num expediente
+nota media
+-->
+<alumnos>
+    <alumno num_exp="A001" >
+        <nombre>Constantino</nombre>
+        <apellido>Lantigua Calderín</apellido>
+        <curso>2º ESO</curso>
+        <nota_media>7</nota_media>
+    </alumno>
+    <alumno num_exp="A002" >
+        <nombre>Jose</nombre>
+        <apellido>Cruz Caballero</apellido>
+        <curso>2º ESO</curso>
+        <nota_media>9</nota_media>
+    </alumno>
+</alumnos>

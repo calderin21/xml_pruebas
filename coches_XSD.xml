@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="chat.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<coches>
+    <coche matricula="1234AAA">
+      <marca>Seat</marca>
+      <modelo>León</modelo>
+      <puertas>3</puertas>
+      <color>Rojo</color>
+      <precio venta="ocasión">2000</precio>
+    </coche>
+</coches>

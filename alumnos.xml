@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-nombre
-apellido
-curso
-num expediente
-nota media
--->
-<alumnos>
+<?xml-stylesheet type="text/xsl" href="alumnos.xsl"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="alumnos.xsd">
     <alumno num_exp="A001" >
         <nombre>Constantino</nombre>
         <apellido>Lantigua Calderín</apellido>
@@ -17,6 +12,12 @@ nota media
         <nombre>Jose</nombre>
         <apellido>Cruz Caballero</apellido>
         <curso>2º ESO</curso>
-        <nota_media>9</nota_media>
+        <nota_media>10</nota_media>
+    </alumno>
+    <alumno num_exp="B003" >
+        <nombre>Pepe</nombre>
+        <apellido>Cruz</apellido>
+        <curso>2º ESO</curso>
+        <nota_media>10</nota_media>
     </alumno>
 </alumnos>

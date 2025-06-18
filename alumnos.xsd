@@ -1,0 +1,41 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="NombreTipo"/>
+              <xs:element name="apellido" type="NombreTipo"/>
+              <xs:element name="curso" type="xs:string"/>
+              <xs:element name="nota_media" type="NotaTipo"/>
+            </xs:sequence>
+                     <xs:attribute name="num_exp" type="ExpedienteTipo" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tipos personalizados -->
+  <xs:simpleType name="ExpedienteTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NombreTipo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NotaTipo">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
